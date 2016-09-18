@@ -201,6 +201,20 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{slide}
+  \h{We write Clojure at The Climate Corporation,\\and we're hiring!  Come work
+    with us!}
+  \fullSlideImage{climate-logo-bluebg.eps}
+\end{slide}
+
+
+
+\begin{slide}
+  \h{Especially now that Bayer is buying us!}
+  \fullSlideImage{Bayer-logo-bluebg.eps}
+\end{slide}
+
+
 
 \begin{slide}
   \SlideSection{Questions?}
