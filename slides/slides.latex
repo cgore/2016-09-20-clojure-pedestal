@@ -38,6 +38,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
+\usepackage{dirtree}
 \usepackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{librebaskerville} % Baskerville font
@@ -92,6 +93,10 @@
 \newcommand{\tq}[1]{\textcolor{Green}{\textbf{#1}}}
 \newcommand{\tbd}[1]{\textcolor{Blue}{\textit{#1}}}
 \newcommand{\TODO}{{\Huge \textcolor{Red}{\textbf{{TO DO}}}}}
+
+\newcommand{\dtdir}[1]{%
+  \includegraphics[height=0.75em,keepaspectratio=true]{manila-folder-bluebg.eps}%
+  \textcolor{Blue}{#1}}
 
 \definecolor{commentcolor}{rgb}{0.1,0.1,0.8}
 \definecolor{identifiercolor}{rgb}{0.3,0.3,0.3}
@@ -214,6 +219,33 @@
   \fullSlideImage{Bayer-logo-bluebg.eps}
 \end{slide}
 
+
+\begin{slide}
+  \h{Building out a brand new pedestal app.}
+
+  \texttt{lein new pedestal-service one}
+\end{slide}
+
+
+\begin{slide}
+  \h{What did that make for us?}
+\dirtree{%
+.1 \dtdir{one}.
+.2 \dtdir{config}.
+.3 logback.xml.
+.2 \dtdir{src}.
+.3 \dtdir{one}.
+.4 server.clj.
+.4 service.clj.
+.2 \dtdir{test}.
+.3 \dtdir{one}.
+.4 service-test.clj.
+.2 Capstanfile.
+.2 Dockerfile.
+.2 README.md.
+.2 project.clj.
+}
+\end{slide}
 
 
 \begin{slide}
