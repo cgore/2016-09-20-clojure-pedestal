@@ -10,3 +10,9 @@ In it, we looked into the
 - The talk's [slides in PDF](https://github.com/cgore/2016-09-20-clojure-pedestal/raw/master/slides/slides.pdf).
 - My personal website, [cgore.com](http://www.cgore.com).
 - The talk's [details on Meetup](https://www.meetup.com/stl-clojure/events/233916958/).
+
+## One
+
+```bash
+lein new pedestal-service one
+```
