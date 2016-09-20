@@ -252,17 +252,20 @@
   \h{How do we use this?}
 
   \begin{itemize}
-  \item Run the application:\\
-    \texttt{lein run}
-  \item REPL:\\
-    \texttt{lein repl}
-  \item Build an uberjar:\\
-    \texttt{lein uberjar}
-  \item Build a docker image:\\
-    \texttt{sudo docker build -t one .}
-  \item Run the docker image:\\
-    \texttt{docker run -p 8080:8080 one}
+  \item Run the application: \texttt{lein run}
+  \item View it at \texttt{http://localhost:8080}
+  \item REPL: \texttt{lein repl}
+  \item Build an uberjar: \texttt{lein uberjar}
+  \item Build a docker image: \texttt{sudo docker build -t one .}
+  \item Run the docker image: \texttt{docker run -p 8080:8080 one}
   \end{itemize}
+\end{slide}
+
+
+\begin{slide}
+  \h{I had to update my Java version, and my JDK version, to get this to work.}
+
+  \fullSlideImage{java-yoda.eps}
 \end{slide}
 
 
