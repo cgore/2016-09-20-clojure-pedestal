@@ -19,6 +19,7 @@ lein new pedestal-service one
 
 ## Resources
 
+- [Pedestal release notes](https://github.com/pedestal/pedestal/releases)
 - [Web application with Pedestal](http://thegeez.net/2015/05/16/w3a_web_application_pedestal.html)
   - https://github.com/thegeez/w3a
   - https://github.com/thegeez/w3a-example
