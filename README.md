@@ -24,3 +24,4 @@ lein new pedestal-service one
   - https://github.com/thegeez/w3a-example
 - [The simplest possible Clojure Pedestal app](https://e-string.com/articles/the-simplest-possible-clojure-pedestal-app/)
 - [What Web Framework Should I Use in Clojure?](http://www.lispcast.com/what-web-framework-should-i-use)
+- [So what's happening with Pedestal 0.3.0?](https://groups.google.com/forum/#!topic/pedestal-users/jODwmJUIUcg)
