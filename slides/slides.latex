@@ -270,7 +270,64 @@
 
 
 \begin{slide}
-  \SlideSection{Questions?}
+  \h{Where do we start?}
+
+  \begin{itemize}
+  \item \texttt{lein run} runs:
+  \item \texttt{project.clj :main} which runs:
+  \item \texttt{one.server/-main} which calls:
+  \item \texttt{(server/start runnable-service)} which is defined as:
+  \item \texttt{(server/create-server service/service)}
+  \item Which is a hashmap for the service.
+  \end{itemize}
+\end{slide}
+
+
+\begin{slide}
+  \h{The Service Definition}
+
+  \begin{lstlisting}
+{:env :prod
+ ::http/routes routes
+ ::http/resource-path "/public"
+ ::http/type :jetty
+ ;;::http/host "localhost"
+ ::http/port 8080
+ ;; Options to pass to the container (Jetty)
+ ::http/container-options {:h2c? true
+                           :h2? false
+                           :ssl? false}}
+  \end{lstlisting}
+\end{slide}
+
+
+\begin{slide}
+  \h{The Routes Definition}
+
+  \begin{lstlisting}
+#{["/"
+   :get
+   (conj common-interceptors `home-page)]
+  ["/about"
+   :get
+   (conj common-interceptors `about-page)]}
+  \end{lstlisting}
+\end{slide}
+
+
+\begin{slide}
+  \h{The \texttt{/home} Page}
+
+  \begin{lstlisting}
+(defn home-page
+  [request]
+  (ring-resp/response "Hello World!"))
+  \end{lstlisting}
+\end{slide}
+
+
+\begin{slide}
+  \SlideSection{Let's Explore!}
 \end{slide}
 
 \end{document}
